@@ -88,6 +88,10 @@ const renderLineChart = (data) => {
   });
 };
 
+$('#cards').on('click', '.card', function () {
+  $(this).toggleClass('border-primary shadow');
+});
+
 window.addEventListener('resize', () => {
   if (barChart) barChart.resize();
 });
